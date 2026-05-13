@@ -24,7 +24,7 @@ def main():
         for v in range (0, 5, 1):
             valores[v] = random.randint(1, 100)
         params[i] = (id, valores)
-        print (params)
+        
         
     with multiprocessing.Pool(processes=3) as pool:
         pool.starmap(processamento, params) 
